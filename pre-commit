@@ -1,0 +1,19 @@
+#!bin/bash/
+
+if 
+then
+    echo "pre-commit: About to create a new commit..."
+else
+    echo "pre-commit: About to create the first commit..."
+fi
+
+echo "pre-commit: Testing for whitespace errors 😨"
+
+if 
+then
+    echo "pre-commit: No whitespace errors 😀"
+    exit 0
+else
+    echo "pre-commit: Aborting commit due to whitespace errors ☹️"
+    exit 1
+fi
